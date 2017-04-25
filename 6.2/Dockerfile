@@ -1,6 +1,6 @@
-FROM node:6.9.2-alpine
+FROM node:7-alpine
 
-RUN npm install -qg raml2html@~3.0 \
+RUN npm install -g raml2html@~6.2 \
  && npm cache clean
 
 RUN mkdir -p /data
